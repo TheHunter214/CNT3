@@ -13,6 +13,12 @@ export default class TMN_Form2 extends Component {
         khoaHoc:eval.target.value
       })
     }
+
+    handleChange = (event)=>{
+      eventvent.preventDefault();
+      alert(this.state.khoaHoc)
+
+    }
   render() {
     return (
       <div>
@@ -24,7 +30,7 @@ export default class TMN_Form2 extends Component {
                 <option value="JS">JS</option>
                 <option value="ReactJS">ReactJS</option>
             </select>
-            <button>Submit</button>
+            <button onClick={this.handleSubmit}>Submit</button>
          </form>
 
       </div>
